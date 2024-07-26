@@ -6,19 +6,16 @@ import path from 'path'
 // Este import puede ser necesario para ciertas transformaciones de CommonJS
 import commonjs from '@rollup/plugin-commonjs'
 
-export default defineConfig({
-  build: {
-    rollupOptions: {
-        input: {
-            main: resolve(__dirname, './src/index.html')
-          },
-          external: ['/three/examples/jsm/Addons.js'],
-      plugins: [
-        commonjs(), // Asegúrate de incluir este plugin si usas módulos CommonJS
-      ],
-    },
-    outDir: 'dist', // Asegúrate de que esta ruta sea correcta para tu proyecto
-  },
-   base:'https://JacobCalvillo.github.io/SolarSystem/'
-  },
-)
+export default defineConfig({  
+    plugins: [commonjs()],
+    base:'https://JacobCalvillo.github.io/SolarSystem/',
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'src/index.html'),
+                earth: resolve(__dirname, 'src/js/earth.js'),
+                index: resolve(__dirname, 'src/js/main.js'),
+            },
+        }
+    }   
+})
