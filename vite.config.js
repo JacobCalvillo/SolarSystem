@@ -4,10 +4,8 @@ import { resolve } from 'path'
 import path from 'path'
 
 // Este import puede ser necesario para ciertas transformaciones de CommonJS
-import commonjs from '@rollup/plugin-commonjs'
 
 export default defineConfig({  
-    plugins: [commonjs()],
     base:'https://JacobCalvillo.github.io/SolarSystem/',
     build: {
         rollupOptions: {
