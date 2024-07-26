@@ -19,9 +19,6 @@ export default defineConfig({
     },
     outDir: 'dist', // Asegúrate de que esta ruta sea correcta para tu proyecto
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'), // Cambia según tu estructura de carpetas
-    }
-  }, base:'https://JacobCalvillo.github.io/'
-})
+   base:'https://JacobCalvillo.github.io/'
+  },
+)
