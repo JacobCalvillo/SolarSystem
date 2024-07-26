@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "build": "vite build"
+  },
   "dependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
     "three": "^0.165.0"
   },
   "devDependencies": {
