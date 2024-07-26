@@ -19,6 +19,6 @@ export default defineConfig({
     },
     outDir: 'dist', // Asegúrate de que esta ruta sea correcta para tu proyecto
   },
-   base:'https://JacobCalvillo.github.io/'
+   base:'https://JacobCalvillo.github.io/SolarSystem/'
   },
 )
