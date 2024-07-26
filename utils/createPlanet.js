@@ -1,11 +1,9 @@
 import * as THREE from 'three';
-import { scene } from '../main';
-
-const textureLoader = new THREE.TextureLoader();
-
+import { scene } from '../src/js/main.js';
 
 export function createPlanet(size, texture, position, name,  ring) {
     //Doing the exact same thing to set the color the colorSpace of the planet's texture
+    const textureLoader = new THREE.TextureLoader();
     const map = textureLoader.load(texture);
     map.colorSpace = THREE.SRGBColorSpace;
     const geo = new THREE.SphereGeometry(size, 30, 30);
