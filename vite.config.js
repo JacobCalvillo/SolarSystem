@@ -13,8 +13,8 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'src/index.html'),
-                earth: resolve(__dirname, 'src/js/earth.js'),
+                main: resolve(__dirname, 'index.html'),
+                nested: resolve(__dirname, 'src/earth.html'),
                 index: resolve(__dirname, 'src/js/main.js'),
             },
         }
