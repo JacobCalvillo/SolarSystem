@@ -16,7 +16,7 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 nested: resolve(__dirname, 'src/earth.html'),
                 index: resolve(__dirname, 'src/js/main.js'),
-            },
+            }
         }
     }   
 })
