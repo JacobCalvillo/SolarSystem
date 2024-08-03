@@ -14,9 +14,9 @@ import uranusRingTexture from '../texture/uranus ring.png';
 import neptuneTexture from '../texture/neptune.jpg';
 import plutoTexture from '../texture/pluto.jpg';
 
-import { createPlanet } from '../../utils/createPlanet.js';
-import { createSun } from '../../utils/createSun.js';
-import getStarfield from '../../utils/getStarfield.js';
+import { createPlanet } from '../utils/createPlanet.js';
+import { createSun } from '../utils/createSun.js';
+import getStarfield from '../utils/getStarfield.js';
 
 
 const renderer = new THREE.WebGLRenderer({antialias: true});

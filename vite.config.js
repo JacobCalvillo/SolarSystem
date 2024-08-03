@@ -1,11 +1,14 @@
 // vite.config.js
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
-import path from 'path'
+
 
 // Este import puede ser necesario para ciertas transformaciones de CommonJS
 
-export default defineConfig({  
+export default defineConfig({
+    server: {
+        port: 3000,
+    },  
     base:'https://JacobCalvillo.github.io/SolarSystem/',
     build: {
         rollupOptions: {

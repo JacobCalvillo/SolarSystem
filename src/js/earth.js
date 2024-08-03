@@ -5,8 +5,8 @@ import earthMap from '../texture/8k_earth_daymap.jpg';
 import earthMapNight from '../texture/8k_earth_nightmap.jpg';
 import cloudsMap from '../texture/earthCloud.png';
 
-import getStarfield from '../../utils/getStarfield';
-import { getFresnelMat } from '../../utils/getFresnelMat';
+import getStarfield from '../utils/getStarfield';
+import { getFresnelMat } from '../utils/getFresnelMat';
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);

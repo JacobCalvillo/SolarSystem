@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { scene } from '../src/js/main.js';
+import { scene } from '../js/main.js';
 
 export function createPlanet(size, texture, position, name,  ring) {
     //Doing the exact same thing to set the color the colorSpace of the planet's texture

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { scene } from '../src/js/main.js';
+import { scene } from '../js/main.js';
 
 
 export function createSun(size, texture) {
